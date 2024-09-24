@@ -76,9 +76,39 @@ ul {
   display: block;
   margin: 0 auto;
   align-self: center;
-  
 
   box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  max-width: 100%; /* Ensures responsiveness */
+}
+
+/* Ensures that the image inside the button is centered */
+.card--button {
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+}
+
+.card--button img {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  max-width: 100%;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+button img {
+  display: block;
+  margin: 0 auto;
+  align-self: center;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+  max-width: 100%; /* Ensures responsiveness */
 }
 
 .version {
