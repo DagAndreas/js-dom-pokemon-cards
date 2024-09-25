@@ -16,10 +16,6 @@ body {
   font-family: sans-serif;
 }
 
-img {
-  max-width: 100%;
-}
-
 h1,
 h2 {
   text-align: center;
@@ -50,14 +46,17 @@ ul {
 }
 
 .card {
-  width: 100%;
-  justify-self: center;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   border: 1px solid #252525;
   border-radius: 8px;
+  width: 100%;
+  justify-self: center;
+}
 
-  cursor: pointer;
-  transition: all 300ms;
+.card--img {
+  /* nada*/
 }
 
 .card:hover {
@@ -68,25 +67,23 @@ ul {
 .card--text {
   margin: 0.2rem;
   padding: 1rem;
-
   border-radius: 5px;
+  width: 100%;
+  text-align: left; /* Left-align the list items */
 }
 
-.card--img {
-  display: block;
-  margin: 0 auto;
-  align-self: center;
 
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  max-width: 100%; /* Ensures responsiveness */
-}
 
-/* Ensures that the image inside the button is centered */
+
 .card--button {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: none;
   background: none;
   padding: 0;
+  width: 100%;
+  height: auto;
 }
 
 .card--button img {

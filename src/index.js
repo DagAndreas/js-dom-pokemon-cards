@@ -31,12 +31,12 @@ function createCard(item) {
 
   // Create the button element
   let h2Button = document.createElement("button")
-  h2Button.className = "card--button"
+  h2Button.className = "button"
 
   // Create the image element
   let h2Img = document.createElement("img")
-  h2Img.width = 256
-  h2Img.height = 256
+  h2Img.width = "256"
+  h2Img.height = "256"
   h2Img.className = "card--img"
   h2Img.src = item.sprites.other["official-artwork"].front_default
 
@@ -68,21 +68,3 @@ function createCard(item) {
 
   return cardLi
 }
-/*
-<li class="card">
-  <h2 class="card--title">Bulbasaur</h2>
-  <img
-    width="256"
-    class="card--img"
-    src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-  />
-  <ul class="card--text">
-    <li>HP: 45</li>
-    <li>ATTACK: 49</li>
-    <li>DEFENSE: 49</li>
-    <li>SPECIAL-ATTACK: 65</li>
-    <li>SPECIAL-DEFENSE: 65</li>
-    <li>SPEED: 45</li>
-  </ul>
-</li>
-*/
