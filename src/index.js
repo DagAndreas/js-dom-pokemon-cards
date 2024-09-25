@@ -36,6 +36,7 @@ function createCard(item) {
   // Create the image element
   let h2Img = document.createElement("img")
   h2Img.width = 256
+  h2Img.height = 256
   h2Img.className = "card--img"
   h2Img.src = item.sprites.other["official-artwork"].front_default
 
